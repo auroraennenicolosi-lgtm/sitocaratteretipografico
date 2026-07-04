@@ -96,9 +96,9 @@ body {
 }
 
 .image img {
-  width: 100%;
+  width: 80%;
+  max-width: 900px;
   height: auto;
-  max-width: 500%;
 }
 
 
