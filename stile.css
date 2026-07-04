@@ -5,13 +5,20 @@ body {
   color: #111;
 }
 
-/* NAVBAR */
+
 .navbar {
   display: flex;
   justify-content: space-between;
   padding: 15px 30px;
   background: black;
   color: white;
+  align-items: center;
+}
+
+.nav-right {
+  margin-left: auto;
+  display: flex;
+  gap: 15px;
 }
 
 .navbar a{
@@ -24,7 +31,7 @@ body {
     text-decoration: underline;
 }
 
-/* HERO */
+
 .hero {
   position: relative;
 }
@@ -46,16 +53,6 @@ body {
 
 }
 
-.hero h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 60px;
-}
-
-/* FRASE */
 .intro {
   padding: 40px;
 }
@@ -64,9 +61,10 @@ body {
   font-family: 'Libre Baskerville', serif;
   font-size: 42px;
   line-height: 1.2;
+  
+
 }
 
-/* BLOCCO */
 .block {
   display: flex;
   gap: 40px;
@@ -98,11 +96,12 @@ body {
 }
 
 .image img {
-  width: 50%;
+  width: 100%;
   height: auto;
+  max-width: 500%;
 }
 
-/* CARD */
+
 .cards {
   display: flex;
   justify-content: center;
@@ -149,7 +148,7 @@ body {
   transform: scale(1.05);
 }
 
-/* FOOTER */
+
 footer {
   height: 60px;
   background: black;
@@ -160,11 +159,17 @@ footer {
   padding: 10px;
 }
 
-/* PAGINA DETTAGLIO */
+
 .detail {
   padding: 40px;
   max-width: 900px;
   margin: auto;
+}
+
+.detail-title {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 42px;
+  margin-bottom: 20px;
 }
 
 .detail h3 {
@@ -176,7 +181,7 @@ footer {
   margin-bottom: 15px;
 }
 
-/* immagine centrata */
+
 .image-center {
   display: flex;
   justify-content: center;
@@ -188,7 +193,7 @@ footer {
   max-width: 100%;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 768px) {
   .block {
     flex-direction: column;
@@ -228,6 +233,11 @@ footer {
 
   .image-center img {
     width: 70%;
+  }
+  
+  .card img {
+    width: 100%;
+
   }
 
 }
